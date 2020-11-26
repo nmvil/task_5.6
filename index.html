@@ -6,7 +6,8 @@
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
-	<header>
+	<!-- шапка сайта: заданы цвет фона, закруглённые границы, отступ текста от границы, цвет текста -->
+	<header style="background-color: #0080BC; border-radius: 10px; padding: 5px; color: white">
 		<h1>Личный сайт</h1>
 		<h2>Главная страница</h2>
 		<table style="width: 50%; text-align: center;">
@@ -18,9 +19,16 @@
 		</table>
 	</header>
 
+	<main>
+		<!-- моя фотография. расположение у правой границы, закругленные границы, отступ от остальных элементов 5 пикселей, ширина фотографии 30% от ширины окна -->
+		<img src="images/avatar.jpg" width="300" style="border-radius: 10px; padding: 5px; float: right;" alt="avatar">
+		<p>Доброго времени суток!</p>
+		<p>Меня зовут Илья, и вы на моём сайте. </p>
+		<p>Здесь вы сможете почитать <a href="pages/about.html">обо мне</a> и найти мои <a href="pages/contacts.html">контакты</a></p>
+	</main>
 
-
-	<footer>
+	<!-- подвал сайта: стиль аналогичен шапке, дополнительно задан параметр clear, чтобы подвал на пересекался с другими элементами -->
+	<footer style="background-color: #0080BC; border-radius: 10px; padding: 5px; color: white; clear: both">
 		&copy; Naumov Ilya, 2020 <br>
 		<a href="http://www.instagram.com/naumovilya99" style="padding: 10px"><img src="images/instagram.svg" width="30" alt="Instagram"></a>
 		<a href="https://t.me/naumovilya" style="padding: 10px"><img src="images/telegram.svg" width="30" alt="Telegram"></a>
